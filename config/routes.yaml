@@ -1,3 +1,7 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+blog_list:
+    path:     /blog
+    controller: App\Controller\BlogController::listAction
+
+blog_show:
+    path:     /blog/{title}
+    controller: App\Controller\BlogController::showAction
