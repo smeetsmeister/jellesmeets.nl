@@ -14,7 +14,6 @@ class BlogController extends AbstractController
      */
     public function listAction(BlogService $blogService)
     {
-        dump($blogService->listBlogs());
 
         return $this->render('blog/index.html.twig', [
             'controller_name' => 'BlogController',
